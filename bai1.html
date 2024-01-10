@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web với nút và Javascript</title>
+    <script>
+        funtion displayGreeting() {
+            alert("Xin chào!"); 
+        }
+    </script>
+</head>
+<body>
+    <button onclick="displayGreeting()">OK</button>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function() {
+            var button = document.getElementById("myButton");
+            button.addEventListener("click", function() {
+                alert("Xin chào!");
+            });
+        };
+    </script>
+</head>
+<body>
+    <button id="myButton">OK</button>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#myButton").click(function() {
+                alert("Xin chào!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="myButton">Nhấn vào đây</button>
+</body>
+</html>
